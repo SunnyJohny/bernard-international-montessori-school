@@ -22,17 +22,24 @@ const quickLinks = [
 
 const Footer = () => {
   // =====================================================
-  // PROTOTYPE CONTACT DETAILS
-  // Add the school's official details when available.
+  // SCHOOL CONTACT DETAILS
   // =====================================================
 
-  const phone = "";
-  const email = "";
-  const facebookUrl = "";
+  const phone = "09028678282";
 
-  const whatsappNumber = phone
-    ? phone.replace(/\D/g, "")
-    : "";
+  const email = "";
+
+  const facebookUrl =
+    "https://www.facebook.com/BISMjos/";
+
+  // =====================================================
+  // WHATSAPP NUMBER
+  // Nigerian international format:
+  // 09028678282 -> 2349028678282
+  // =====================================================
+
+  const whatsappNumber =
+    "2349028678282";
 
   const whatsappMessage =
     "Hello Bernard International Montessori School";
@@ -137,7 +144,9 @@ const Footer = () => {
                 <div className="flex items-center gap-3 text-white/50">
                   <FaPhoneAlt className="text-sky-300 shrink-0" />
 
-                  <span>Official phone number coming soon</span>
+                  <span>
+                    Official phone number coming soon
+                  </span>
                 </div>
               )}
 
@@ -156,7 +165,9 @@ const Footer = () => {
                 <div className="flex items-center gap-3 text-white/50">
                   <FaEnvelope className="text-sky-300 shrink-0" />
 
-                  <span>Official email coming soon</span>
+                  <span>
+                    Official email coming soon
+                  </span>
                 </div>
               )}
             </div>
@@ -185,6 +196,7 @@ const Footer = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Facebook"
+                  title="Follow us on Facebook"
                   className="h-11 w-11 rounded-full bg-white/10 border border-white/10 flex items-center justify-center text-white hover:bg-sky-400 hover:text-blue-950 transition"
                 >
                   <FaFacebookF className="text-lg" />
@@ -207,6 +219,7 @@ const Footer = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="WhatsApp"
+                  title="Chat with us on WhatsApp"
                   className="h-11 w-11 rounded-full bg-white/10 border border-white/10 flex items-center justify-center text-white hover:bg-sky-400 hover:text-blue-950 transition"
                 >
                   <FaWhatsapp className="text-xl" />
@@ -227,6 +240,7 @@ const Footer = () => {
                 <a
                   href={`mailto:${email}`}
                   aria-label="Email"
+                  title="Send us an email"
                   className="h-11 w-11 rounded-full bg-white/10 border border-white/10 flex items-center justify-center text-white hover:bg-sky-400 hover:text-blue-950 transition"
                 >
                   <FaEnvelope className="text-lg" />
@@ -258,7 +272,9 @@ const Footer = () => {
                 >
                   <FaWhatsapp />
 
-                  <span>Chat on WhatsApp</span>
+                  <span>
+                    Chat on WhatsApp
+                  </span>
                 </a>
               ) : (
                 <button
@@ -268,7 +284,9 @@ const Footer = () => {
                 >
                   <FaWhatsapp />
 
-                  <span>WhatsApp Coming Soon</span>
+                  <span>
+                    WhatsApp Coming Soon
+                  </span>
                 </button>
               )}
             </div>
